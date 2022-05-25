@@ -56,9 +56,11 @@ def canguilera():
             #No se agrega el condimento sal 
             elif componentes == 'no':
                 print("Sin sal")
-            #Mensaje de activación del sistema de cocción proceso previo para la obtención de las palomitas
+            #Mensaje de activación del sistema de cocción proceso 
+            # previo para la obtención de las palomitas
             print("Activación del sistema de cocción por aire")
             estado_de_objetivo ['cine']= '0'
+            #Incrementa por las palomitas lista en la cocina
             costo +=1
             print("Las palomitas ya están listas")
             print("Costo ACtual: "+ str(costo))
@@ -78,8 +80,11 @@ def canguilera():
             #No se agrega el condimento sal 
             elif componentes == 'no':
                 print("Sin sal")
+            #Mensaje de activación del sistema de cocción proceso 
+            # previo para la obtención de las palomitas
             print("Activación del sistema de cocción por aire")
             estado_de_objetivo ['restaurante']= '0'
+            #Incrementa por las palomitas lista en la cocina
             costo +=1
             print("Las palomitas ya están listas")
             print("Costo ACtual: "+ str(costo))
