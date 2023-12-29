@@ -8,13 +8,13 @@ def canguilera():
     estado_de_objetivo = {'cocina': '0','cine':'0', 'restaurante':'0'}
     costo = 0
     #Condimento para las palomitas
-    componentes = {'sal':'si', 'sin_sal':'no'}
+    opciones_condimentos = {'sal':'si', 'sin_sal':'no'}
 
     #El usuario ingresa la ubicación de dónde está situada la canguilera
     ubicacion_entrada = input ("Ingrese la ubicación de la canguilera: ") 
     #El usuario ingresa si en la ubicación ya están las palomitas o están por hacer
     estado = input ("Ingrese el estado del canguil en la "+ubicacion_entrada+": ")
-    componentes = input("Desea agregar sal: ")
+    condimento_elegido = input("Desea agregar sal: ")
 
     if ubicacion_entrada == 'cocina':
         print("La canguilera está en la cocina")
@@ -22,12 +22,12 @@ def canguilera():
         if estado == '1':
             print("El maiz canguil listo para ser palomitas")
             #Se agrega el condimento sal
-            if componentes == 'si':
+            if condimento_elegido == 'si':
                 print("Se agrega sal")
                 #El costo incrementa por la agregación del condimento
                 costo +=1
             #No se agrega el condimento sal 
-            elif componentes == 'no':
+            elif condimento_elegido == 'no':
                 print("Sin sal")
             #Mensaje de activación del sistema de cocción proceso previo para la obtención de las palomitas
             print("Activación del sistema de cocción por aire")
