@@ -49,12 +49,12 @@ def canguilera():
         if estado == '1':
             print("El maiz canguil listo para ser palomitas")
             #Se agrega el condimento sal
-            if componentes == 'si':
+            if condimento_elegido == 'si':
                 print("Se agrega sal")
                 #El costo incrementa por la agregación del condimento
                 costo +=1
             #No se agrega el condimento sal 
-            elif componentes == 'no':
+            elif condimento_elegido == 'no':
                 print("Sin sal")
             #Mensaje de activación del sistema de cocción proceso 
             # previo para la obtención de las palomitas
@@ -74,11 +74,11 @@ def canguilera():
         if estado == '1':
             print("El maiz canguil listo para ser palomitas")
             #Se agrega el condimento sal
-            if componentes == 'si':
+            if condimento_elegido == 'si':
                 print("Se agrega sal")
                 costo +=1
             #No se agrega el condimento sal 
-            elif componentes == 'no':
+            elif condimento_elegido == 'no':
                 print("Sin sal")
             #Mensaje de activación del sistema de cocción proceso 
             # previo para la obtención de las palomitas
